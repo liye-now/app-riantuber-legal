@@ -136,6 +136,7 @@
     <li>Category selections and playlist assignments</li>
     <li>Scheduled publish dates, if applicable</li>
     <li>Thumbnail images you select or generate</li>
+    <li>Optional coarse location (such as city/state) derived from selected video metadata for naming rules, when available</li>
   </ul>
 
   <h3>1.4 Device Information</h3>
@@ -147,17 +148,12 @@
     <li>General device storage availability (to ensure sufficient space for upload operations)</li>
   </ul>
 
-  <h3>1.5 Usage Analytics</h3>
-  <p>We may collect anonymized, aggregated usage data to improve the App, such as:</p>
-  <ul>
-    <li>Feature usage frequency (e.g., batch upload, scheduling)</li>
-    <li>Upload success and failure rates (without identifying content)</li>
-    <li>App crash reports and performance metrics</li>
-  </ul>
-  <p>This data is collected in a non-personally-identifiable manner and cannot be used to identify individual users.</p>
+  <h3>1.5 Diagnostics and Logging</h3>
+  <p>RianTuber currently does not use third-party analytics SDKs or ad tracking SDKs. The App may generate local diagnostic logs on your device (for example, upload errors) to support core functionality and troubleshooting.</p>
+  <p>If cloud crash reporting or analytics are added in a future version, this policy and App Store privacy disclosures will be updated before release.</p>
 
   <h3>1.6 Photos Library Access</h3>
-  <p>With your explicit permission, RianTuber accesses videos you select from your device's Photos library. The App only reads the specific videos you choose for upload — it does not scan, index, or catalog your entire photo library.</p>
+  <p>With your explicit permission, RianTuber accesses videos you select from your device's Photos library. The App only reads the specific videos you choose for upload — it does not scan, index, or catalog your entire photo library. When available, related metadata (such as creation time and photo location) may be read to support naming and organization features.</p>
 
   <h2>2. How We Use Your Information</h2>
   <p>All information collected by RianTuber is used exclusively for the following purposes:</p>
@@ -182,6 +178,7 @@
 
   <h3>3.2 No Server-Side Storage</h3>
   <p>RianTuber does <strong>not</strong> transmit or store your personal data, videos, OAuth tokens, or account credentials on any external server operated by us. All video uploads occur directly from your device to YouTube's servers using secure HTTPS connections. We do not operate any backend infrastructure that processes or retains user data.</p>
+  <p>Some third-party platform requests may still occur as part of app functionality, such as Google/YouTube API calls you authorize and Apple geocoding requests when location-based naming is used.</p>
 
   <h3>3.3 Security Measures</h3>
   <p>We implement the following security measures to protect your data:</p>
@@ -211,7 +208,7 @@
   </ul>
 
   <h3>4.2 Apple Services</h3>
-  <p>The App is distributed through the Apple App Store and may use Apple frameworks for crash reporting and analytics. Apple's handling of such data is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+  <p>The App may use Apple system services such as Photos framework access and CLGeocoder (for optional location-based naming features). Data handling by these platform services is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
 
   <h2>5. Data Retention and Deletion</h2>
   <h3>5.1 Retention Period</h3>
