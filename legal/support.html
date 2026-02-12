@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RianTuber — Support</title>
+  <style>
+    :root {
+      --color-bg: #ffffff;
+      --color-text: #1f2937;
+      --color-heading: #0f172a;
+      --color-muted: #6b7280;
+      --color-accent: #2563eb;
+      --color-accent-light: #eff6ff;
+      --color-border: #e5e7eb;
+      --color-code-bg: #f3f4f6;
+      --color-success: #059669;
+      --color-warning: #d97706;
+      --radius: 8px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0; padding: 0;
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    header {
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 1.75rem;
+      color: var(--color-heading);
+      margin: 0 0 0.5rem;
+    }
+    .meta {
+      color: var(--color-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: var(--color-heading);
+      margin: 2rem 0 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    h3 {
+      font-size: 1.05rem;
+      color: var(--color-heading);
+      margin: 1.5rem 0 0.5rem;
+    }
+    p, li { font-size: 1rem; }
+    ul, ol { padding-left: 1.25rem; }
+    li { margin-bottom: 0.4rem; }
+    a { color: var(--color-accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: var(--color-code-bg);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .highlight-box {
+      background: var(--color-accent-light);
+      border-left: 4px solid var(--color-accent);
+      padding: 1rem 1.25rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 1.5rem 0;
+    }
+    .highlight-box p { margin: 0; }
+    .contact-card {
+      background: #f9fafb;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .contact-card p { margin: 0.3rem 0; }
+    .faq-item {
+      margin-bottom: 0.75rem;
+    }
+    .faq-item summary {
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0.6rem 0;
+      color: var(--color-heading);
+      list-style: none;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::before {
+      content: "▸ ";
+      color: var(--color-accent);
+      font-size: 0.85em;
+    }
+    .faq-item[open] summary::before {
+      content: "▾ ";
+    }
+    .faq-item summary:hover {
+      color: var(--color-accent);
+    }
+    .faq-item .faq-answer {
+      margin: 0.25rem 0 1rem 1rem;
+      padding-left: 0.75rem;
+      border-left: 2px solid var(--color-border);
+    }
+    .faq-item .faq-answer p { margin: 0.5rem 0; }
+    .troubleshoot-step {
+      background: #f9fafb;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+    }
+    .troubleshoot-step h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+    }
+    .troubleshoot-step p { margin: 0.4rem 0; }
+    .version-badge {
+      display: inline-block;
+      background: var(--color-accent-light);
+      color: var(--color-accent);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--color-border);
+      font-size: 0.85rem;
+      color: var(--color-muted);
+    }
+    footer nav a { margin-right: 1.25rem; }
+    @media (max-width: 600px) {
+      .container { padding: 1.25rem 1rem 3rem; }
+      header h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Support</h1>
+    <p class="meta">
+      <strong>RianTuber</strong> (com.riantuber.app)<br>
+      Last Updated: February 12, 2026
+    </p>
+  </header>
+
+  <div class="highlight-box">
+    <p>Need help with RianTuber? Browse the frequently asked questions and troubleshooting guides below, or contact us directly. We're here to help.</p>
+  </div>
+
+  <h2>1. Contact Us</h2>
+  <div class="contact-card">
+    <p>📧 <strong>Email:</strong> <a href="mailto:support@riantuber.com">support@riantuber.com</a></p>
+    <p>⏱ <strong>Response Time:</strong> Within 1–2 business days</p>
+    <p>🌐 <strong>Languages:</strong> English, 中文</p>
+  </div>
+  <p>To help us resolve your issue as quickly as possible, please include the following information in your email:</p>
+  <ul>
+    <li>Your RianTuber app version (found in the App's Settings screen)</li>
+    <li>Your iOS version (Settings → General → About)</li>
+    <li>Your device model (e.g., iPhone 15 Pro, iPad Air)</li>
+    <li>A clear description of the issue you are experiencing</li>
+    <li>Steps to reproduce the problem, if applicable</li>
+    <li>Screenshots or screen recordings, if helpful</li>
+    <li>Any error messages displayed by the App</li>
+  </ul>
+
+  <h2>2. Frequently Asked Questions</h2>
+
+  <h3>Getting Started</h3>
+
+  <details class="faq-item">
+    <summary>What is RianTuber and what does it do?</summary>
+    <div class="faq-answer">
+      <p>RianTuber is an iOS app designed to help you batch-upload videos from your device to YouTube. Instead of uploading videos one at a time through the YouTube app, RianTuber lets you select multiple videos, configure their titles, descriptions, tags, privacy settings, and playlists all at once, then upload them in a single batch. This saves significant time for content creators who regularly upload multiple videos.</p>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>How do I connect my YouTube account?</summary>
+    <div class="faq-answer">
+      <p>Tap the "Sign In" button on the main screen and follow the Google Sign-In flow. RianTuber uses Google's secure OAuth 2.0 authentication — your Google password is never stored in the app. You will be asked to grant permission for RianTuber to upload videos and read basic channel information. You can revoke this access at any time.</p>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Can I connect multiple YouTube channels?</summary>
+    <div class="faq-answer">
+      <p>RianTuber supports signing in with one Google account at a time. If your Google account has access to multiple YouTube channels (e.g., through Brand Accounts), you can select which channel to upload to within the app. To switch to a different Google account entirely, sign out and sign in with the other account.</p>
+    </div>
+  </details>
+
+  <h3>Uploading Videos</h3>
+
+  <details class="faq-item">
+    <summary>Why does RianTuber need access to my Photos library?</summary>
+    <div class="faq-answer">
+      <p>RianTuber needs Photos library access to let you select videos for upload. When prompted, you can choose to grant access to your entire library or only selected photos and videos. The app only reads the specific videos you choose — it does not scan, index, or catalog your entire library in the background.</p>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>My upload failed. What should I do?</summary>
+    <div class="faq-answer">
+      <p>Upload failures can occur for several reasons. Try the following steps:</p>
+      <ul>
+        <li><strong>Check your internet connection.</strong> Wi-Fi is recommended for large files. Unstable connections can cause uploads to fail mid-transfer.</li>
+        <li><strong>Verify your YouTube account status.</strong> Ensure your account is in good standing and has not been suspended or restricted.</li>
+        <li><strong>Check video requirements.</strong> Make sure your video meets <a href="https://support.google.com/youtube/answer/71673" target="_blank" rel="noopener">YouTube's upload requirements</a> for file size, duration, and format.</li>
+        <li><strong>Retry the upload.</strong> RianTuber supports resumable uploads, so a failed upload can often be retried without starting from scratch.</li>
+        <li><strong>Check YouTube API quota.</strong> YouTube enforces daily API quotas. If you've uploaded many videos in a short period, you may need to wait until the quota resets (typically at midnight Pacific Time).</li>
+        <li><strong>Restart the app.</strong> Force-close RianTuber and reopen it, then retry the upload.</li>
+      </ul>
+      <p>If the issue persists, contact us at <a href="mailto:support@riantuber.com">support@riantuber.com</a> with the error details.</p>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Is there a limit on how many videos I can upload?</summary>
+    <div class="faq-answer">
+      <p>RianTuber itself does not impose upload limits. However, YouTube enforces daily API quotas and upload limits on your channel. New or unverified YouTube channels may have stricter limits (e.g., maximum video length of 15 minutes). To increase your limits, verify your YouTube channel at <a href="https://www.youtube.com/verify" target="_blank" rel="noopener">youtube.com/verify</a>. For details on YouTube's upload limits, visit <a href="https://support.google.com/youtube/answer/71673" target="_blank" rel="noopener">YouTube Help</a>.</p>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Can I schedule videos to be published at a specific time?</summary>
+    <div class="faq-answer">
+      <p>Yes. When configuring your upload, you can set a scheduled publish date and time. The video will be uploaded as "Private" and automatically published at the scheduled time by YouTube. Note that scheduling requires your YouTube channel to be in good standing.</p>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>What video formats does RianTuber support?</summary>
+    <div class="faq-answer">
+      <p>RianTuber supports all video formats that are stored in your iOS Photos library and accepted by YouTube, including MP4, MOV, and M4V. The app reads videos directly from your Photos library, so any video that plays on your device should be uploadable. For a full list of YouTube-supported formats, see <a href="https://support.google.com/youtube/troubleshooter/2888402" target="_blank" rel="noopener">YouTube's supported file formats</a>.</p>
+    </div>
+  </details>
+
+  <h3>Privacy and Security</h3>
+
+  <details class="faq-item">
+    <summary>Does RianTuber store my videos or personal data on a server?</summary>
+    <div class="faq-answer">
+      <p>No. RianTuber is a client-side app that operates entirely on your device. Your videos are uploaded directly from your device to YouTube's servers. We do not operate any backend servers that store, process, or have access to your videos, personal data, or account credentials. All app data (settings, upload history, cached channel info) is stored locally on your device and protected by iOS's built-in encryption.</p>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>How do I disconnect RianTuber from my Google account?</summary>
+    <div class="faq-answer">
+      <p>You can disconnect RianTuber from your Google account in two ways:</p>
+      <ul>
+        <li><strong>Within the App:</strong> Go to Settings and tap "Sign Out" to clear your session and cached data.</li>
+        <li><strong>Via Google:</strong> Visit <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a>, find RianTuber in the list, and click "Remove Access." This immediately revokes all permissions granted to the app.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>How do I delete all my data from RianTuber?</summary>
+    <div class="faq-answer">
+      <p>Since all data is stored locally on your device, you can delete it completely by:</p>
+      <ol>
+        <li>Signing out of your Google account within the App (this clears OAuth tokens and cached channel data)</li>
+        <li>Uninstalling RianTuber from your device (this removes all remaining local data, including settings and upload history)</li>
+        <li>Optionally, revoking access at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a> to ensure the OAuth authorization is fully revoked</li>
+      </ol>
+      <p>To remove videos that have already been uploaded to YouTube, manage them directly in <a href="https://studio.youtube.com" target="_blank" rel="noopener">YouTube Studio</a>. If you need further assistance with data deletion, contact us at <a href="mailto:support@riantuber.com">support@riantuber.com</a>.</p>
+    </div>
+  </details>
+
+  <h3>Compatibility and Technical</h3>
+
+  <details class="faq-item">
+    <summary>What iOS version does RianTuber require?</summary>
+    <div class="faq-answer">
+      <p>RianTuber requires iOS 16.0 or later. The app is compatible with iPhone and iPad. For the best experience, we recommend keeping your device updated to the latest iOS version.</p>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Does RianTuber work on iPad?</summary>
+    <div class="faq-answer">
+      <p>Yes, RianTuber is compatible with iPad running iPadOS 16.0 or later. The interface adapts to the larger screen for a comfortable experience.</p>
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Why is my upload very slow?</summary>
+    <div class="faq-answer">
+      <p>Upload speed depends primarily on your internet connection. Large video files (especially 4K or long-duration videos) require significant bandwidth. To improve upload speed:</p>
+      <ul>
+        <li>Use a stable Wi-Fi connection rather than cellular data</li>
+        <li>Avoid uploading during peak network usage times</li>
+        <li>Close other apps that may be using bandwidth</li>
+        <li>Move closer to your Wi-Fi router for a stronger signal</li>
+        <li>Consider reducing video resolution if upload speed is a persistent issue</li>
+      </ul>
+    </div>
+  </details>
+
+  <h2>3. Troubleshooting Guide</h2>
+
+  <div class="troubleshoot-step">
+    <h3>🔐 "Sign-In Failed" or Authentication Errors</h3>
+    <p>If you cannot sign in to your Google account:</p>
+    <ol>
+      <li>Ensure you have a stable internet connection</li>
+      <li>Check that your Google account is not locked or suspended</li>
+      <li>Go to <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a> and remove RianTuber, then try signing in again</li>
+      <li>Restart the app and your device</li>
+      <li>Update RianTuber to the latest version from the App Store</li>
+      <li>If using a managed Google Workspace account, check with your administrator that third-party app access is enabled</li>
+    </ol>
+  </div>
+
+  <div class="troubleshoot-step">
+    <h3>📤 Uploads Stuck at 0% or Not Starting</h3>
+    <p>If uploads are not progressing:</p>
+    <ol>
+      <li>Check your internet connection — try loading a webpage to confirm connectivity</li>
+      <li>Ensure RianTuber has permission to access your Photos library (Settings → RianTuber → Photos)</li>
+      <li>Verify that the video file is not corrupted — try playing it in the Photos app</li>
+      <li>Force-close the app and reopen it</li>
+      <li>Check if YouTube is experiencing service disruptions at <a href="https://www.google.com/appsstatus" target="_blank" rel="noopener">Google Workspace Status Dashboard</a></li>
+    </ol>
+  </div>
+
+  <div class="troubleshoot-step">
+    <h3>⚠️ "Quota Exceeded" Error</h3>
+    <p>YouTube enforces daily API quotas that limit the number of API calls an app can make:</p>
+    <ol>
+      <li>Wait until the quota resets (typically at midnight Pacific Time / 8:00 AM UTC)</li>
+      <li>Reduce the number of videos you upload in a single day</li>
+      <li>Avoid repeatedly retrying failed uploads in quick succession, as each attempt consumes quota</li>
+    </ol>
+  </div>
+
+  <div class="troubleshoot-step">
+    <h3>📱 App Crashes or Freezes</h3>
+    <p>If the app is unstable:</p>
+    <ol>
+      <li>Update to the latest version of RianTuber from the App Store</li>
+      <li>Ensure your device has sufficient free storage space</li>
+      <li>Restart your device</li>
+      <li>If the issue persists, uninstall and reinstall the app (note: this will clear local settings)</li>
+      <li>Report the issue to <a href="mailto:support@riantuber.com">support@riantuber.com</a> with your device model, iOS version, and steps to reproduce</li>
+    </ol>
+  </div>
+
+  <div class="troubleshoot-step">
+    <h3>🔄 Videos Not Appearing on YouTube After Upload</h3>
+    <p>If your upload completed but the video is not visible:</p>
+    <ol>
+      <li>YouTube may still be processing the video — this can take minutes to hours depending on video length and resolution</li>
+      <li>Check <a href="https://studio.youtube.com" target="_blank" rel="noopener">YouTube Studio</a> for the video's processing status</li>
+      <li>Verify the privacy setting — if set to "Private," the video won't be publicly visible</li>
+      <li>If scheduled, the video will appear at the scheduled publish time</li>
+      <li>Check your YouTube channel for any policy violations that may have caused the video to be removed</li>
+    </ol>
+  </div>
+
+  <h2>4. Feature Requests and Feedback</h2>
+  <p>We actively develop RianTuber based on user feedback. If you have a feature request, suggestion, or general feedback:</p>
+  <ul>
+    <li><strong>Email us:</strong> Send your ideas to <a href="mailto:support@riantuber.com">support@riantuber.com</a> with the subject line "Feature Request" or "Feedback"</li>
+    <li><strong>App Store Review:</strong> Leave a review on the App Store — we read every review and use them to prioritize improvements</li>
+  </ul>
+  <p>While we cannot guarantee that every feature request will be implemented, we carefully consider all feedback and prioritize features that benefit the most users.</p>
+
+  <h2>5. App Version Information</h2>
+  <p>You can find your current RianTuber version in the App's Settings screen.</p>
+  <p>We recommend always using the latest version of RianTuber to benefit from bug fixes, performance improvements, and new features. Enable automatic updates in the App Store (Settings → App Store → App Updates) to stay up to date.</p>
+  <p>Current release: <span class="version-badge">v1.0</span></p>
+  <p>Release notes and update history are available on the App Store product page.</p>
+
+  <h2>6. Support Scope</h2>
+  <p>Our support team can help with:</p>
+  <ul>
+    <li>App installation, setup, and configuration</li>
+    <li>Google account sign-in issues within the App</li>
+    <li>Upload workflow, scheduling, and metadata configuration</li>
+    <li>Bug reports and technical issues</li>
+    <li>Feature requests and feedback</li>
+    <li>Privacy and data deletion inquiries</li>
+  </ul>
+  <p>For issues related to your YouTube account (channel strikes, monetization, content policy violations, or channel restrictions), please contact <a href="https://support.google.com/youtube/" target="_blank" rel="noopener">YouTube Support</a> directly, as these are outside our control.</p>
+
+  <h2>7. Related Documents</h2>
+  <ul>
+    <li><a href="./privacy.html">Privacy Policy</a> — How we handle your data</li>
+    <li><a href="./terms.html">Terms of Service</a> — Terms governing your use of RianTuber</li>
+  </ul>
+
+  <footer>
+    <nav>
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+      <a href="./support.html">Support</a>
+    </nav>
+    <p>&copy; 2026 RianTuber. All rights reserved.</p>
+  </footer>
+
+</div>
+</body>
+</html>
